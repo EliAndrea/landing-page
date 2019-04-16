@@ -3,6 +3,7 @@ import React from "react";
 import { Jumbotron } from "./jumbotron.jsx";
 import { NavBar } from "./navbar.jsx";
 import { Card } from "./card.jsx";
+import { Footer } from "./footer.jsx";
 
 //create your first component
 
@@ -57,6 +58,7 @@ export class Home extends React.Component {
 						/>
 					</div>
 				</div>
+				<Footer />
 			</div>
 		);
 	}
