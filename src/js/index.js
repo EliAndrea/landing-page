@@ -9,7 +9,6 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import { NavBar } from "./component/navbar.jsx";
 import { Home } from "./component/home.jsx";
 
 //render your react application
