@@ -4,7 +4,9 @@ import PropTypes from "prop-types";
 export const Card = props => {
 	return (
 		<div className="card">
+			<img src={props.imageUrl} className="card-img-top" alt="..." />
 			<div className="card-body">
+				<h5 className="card-title"> {props.cardTitle}</h5>
 				<p className="card-text">{props.content}</p>
 				<a href={props.url} className="btn btn-primary">
 					{props.label}
@@ -17,5 +19,7 @@ export const Card = props => {
 Card.propTypes = {
 	content: PropTypes.string,
 	url: PropTypes.string,
-	label: PropTypes.string
+	label: PropTypes.string,
+	imageUrl: PropTypes.string,
+	cardTitle: PropTypes.string
 };
